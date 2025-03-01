@@ -66,6 +66,37 @@ body {
   font-family: var(--default-font);
 }
 
+/* Watermark Text */
+body::before {
+  content: "Barq Studio"; /* Your text */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.1); /* Transparent text */
+  font-weight: bold;
+  z-index: 2; /* Keeps it in the background */
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Watermark Image */
+body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('assets/img/watermark.png') no-repeat center;
+  background-size: contain; /* Adjust size */
+  width: 50vw; /* Adjust as needed */
+  height: 50vh;
+  opacity: 0.1; /* Transparency level */
+  z-index: 1; /* Keeps it behind everything */
+  pointer-events: none;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;

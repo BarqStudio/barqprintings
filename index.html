@@ -26,10 +26,157 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* Curtain Container */
+.curtain {
+  position: fixed;
+  top: 12%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 3;
+  overflow: hidden;
+}
+
+/* Left Curtain */
+.curtain .left {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #6d0b0b 0%,
+    #9b111e 10%,
+    #6d0b0b 20%,
+    #9b111e 30%,
+    #6d0b0b 40%,
+    #9b111e 50%,
+    #6d0b0b 60%,
+    #9b111e 70%,
+    #6d0b0b 80%,
+    #9b111e 90%,
+    #6d0b0b 100%
+  );
+
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  transition: transform 2s ease-in-out;
+}
+
+/* Right Curtain */
+.curtain .right {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #6d0b0b 0%,
+    #9b111e 10%,
+    #6d0b0b 20%,
+    #9b111e 30%,
+    #6d0b0b 40%,
+    #9b111e 50%,
+    #6d0b0b 60%,
+    #9b111e 70%,
+    #6d0b0b 80%,
+    #9b111e 90%,
+    #6d0b0b 100%
+  );
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  transition: transform 2s ease-in-out;
+}
+
+/* Curtain Opening Animation */
+.open .left {
+  transform: translateX(-100%);
+}
+
+.open .right {
+  transform: translateX(100%);
+}
+
+/* Card Container */
+.card-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Cards */
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Spread Effect on Hover */
+.card-container:hover .card-1 {
+    transform: translateX(-75px) rotate(-15deg);
+}
+.card-container:hover .card-2 {
+    transform: translateX(-25px) rotate(-5deg);
+}
+.card-container:hover .card-3 {
+    transform: translateX(25px) rotate(5deg);
+}
+
+.card-container:hover .card-4 {
+    transform: translateX(75px) rotate(15deg);
+}
+
+.card-1:hover {
+    z-index: 5;
+}
+.card-1:hover .card-2, .card-1:hover .card-3, .card-1:hover .card-4 {
+  z-index: 4;
+}
+
+.card-2:hover {
+    z-index: 5;
+}
+.card-2:hover .card-1, .card-2:hover .card-3, .card-2:hover .card-4 {
+  z-index: 4;
+}
+
+.card-3:hover {
+    z-index: 5;
+}
+.card-3:hover .card-1, .card-3:hover .card-2, .card-3:hover .card-4 {
+  z-index: 4;
+}
+
+  </style>
+<script>
+  window.addEventListener("load", function () {
+    document.querySelector(".curtain").classList.add("open");
+    setTimeout(() => {
+      document.querySelector(".curtain").style.display = "none";
+    }, 2000); // Hide after animation ends
+  });
+
+</script>
+
 
 </head>
 
 <body class="index-page">
+
+  <div class="curtain">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -82,7 +229,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <h1>Welcome to Barq Studio</h1>
+            <h1>Welcome to Barq Studio and Printings</h1>
             <p>Barq Studio is your one-stop destination for professional photography and premium printing solutions. Whether you need passport photos, high-quality prints, creative designs, or custom branding materials, we bring your ideas to life with precision and creativity. Our expert team ensures that every photo, print, and product reflects the highest standards of quality and excellence.
 
               With a focus on studio photography, corporate branding, and customized packaging, we serve individuals and businesses alike, helping them stand out with stunning visuals and premium print materials.</p>
@@ -114,7 +261,13 @@
           <!-- Feature 1: Professional Photography & Videography -->
           <div class="row gy-4 align-items-center features-item">
               <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-                  <img src="assets/img/features-1.svg" class="img-fluid" alt="Photography Services">
+                  <!-- <img src="assets/Images/barq/photography.avif" class="img-fluid" alt="Photography Services"> -->
+                  <div class="card-container">
+                    <img src="assets/Images/barq/familyphoto.jpeg" class="card card-1" alt="Photography Services">
+                    <img src="assets/Images/barq/photography.avif" class="card card-2" alt="Photography Services">
+                    <img src="assets/Images/barq/menphoto.jpeg" class="card card-3" alt="Photography Services">
+                    <img src="assets/Images/barq/photography.jpeg" class="card card-4" alt="Photography Services">
+                  </div>
               </div>
               <div class="about-content col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
                   <h3>Professional Photography & Videography</h3>
@@ -136,7 +289,13 @@
           <!-- Feature 2: Premium Printing & Branding Solutions -->
           <div class="row gy-4 align-items-center features-item">
               <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                  <img src="assets/img/features-2.svg" class="img-fluid" alt="Printing Solutions">
+                  <!-- <img src="assets/Images/barq/bussiness cards.png" class="img-fluid" alt="Printing Solutions"> -->
+                  <div class="card-container">
+                    <img src="assets/Images/barq/card1.jpeg" class="card card-1" alt="Photography Services">
+                    <img src="assets/Images/barq/card2.jpeg" class="card card-2" alt="Photography Services">
+                    <img src="assets/Images/barq/card3.jpeg" class="card card-3" alt="Photography Services">
+                    <img src="assets/Images/barq/card4.jpeg" class="card card-4" alt="Photography Services">
+                  </div>
               </div>
               <div class="about-content col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
                   <h3>Premium Printing & Branding Solutions</h3>
@@ -156,7 +315,13 @@
           <!-- Feature 3: Customized Corporate & Gift Items -->
           <div class="row gy-4 align-items-center features-item">
               <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-                  <img src="assets/img/features-3.svg" class="img-fluid" alt="Gift Sets">
+                  <!-- <img src="assets/img/features-3.svg" class="img-fluid" alt="Gift Sets"> -->
+                  <div class="card-container">
+                    <img src="assets/Images/barq/gift1.jpeg" class="card card-1" alt="Photography Services">
+                    <img src="assets/Images/barq/gift2.jpeg" class="card card-2" alt="Photography Services">
+                    <img src="assets/Images/barq/gift3.jpeg" class="card card-3" alt="Photography Services">
+                    <img src="assets/Images/barq/gift4.jpeg" class="card card-4" alt="Photography Services">
+                  </div>
               </div>
               <div class="about-content col-md-7" data-aos="fade-up">
                   <h3>Luxury Gift Sets & Corporate Merchandise</h3>
@@ -174,7 +339,13 @@
           <!-- Feature 4: Packaging & Promotional Solutions -->
           <div class="row gy-4 align-items-center features-item">
               <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-                  <img src="assets/img/features-4.svg" class="img-fluid" alt="Packaging Solutions">
+                  <!-- <img src="assets/img/features-4.svg" class="img-fluid" alt="Packaging Solutions"> -->
+                  <div class="card-container">
+                    <img src="assets/Images/barq/brand1.jpeg" class="card card-1" alt="Photography Services">
+                    <img src="assets/Images/barq/brand2.jpeg" class="card card-2" alt="Photography Services">
+                    <img src="assets/Images/barq/brand3.jpeg" class="card card-3" alt="Photography Services">
+                    <img src="assets/Images/barq/brand5.jpeg" class="card card-4" alt="Photography Services">
+                  </div>
               </div>
               <div class="about-content col-md-7 order-2 order-md-1" data-aos="fade-up">
                   <h3>Custom Packaging & Promotional Materials</h3>
@@ -198,7 +369,7 @@
     <!-- About Section -->
     <section id="about" class="section about">
 
-      <div class="container">
+    <!--   <div class="container">
 
         <div class="row gy-3">
 
@@ -232,7 +403,7 @@
         </div>
 
       </div>
-
+-->
     </section><!-- /About Section -->
 
     <!-- Services Section -->
@@ -934,7 +1105,7 @@
     </section><!-- /Contact Section -->
 
 
-  </main>
+  </main><!-- End Main -->
 
   <footer id="footer" class="footer position-relative">
 
