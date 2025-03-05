@@ -26,148 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    /* Curtain Container */
-/* .curtain {
-  position: fixed;
-  top: 12%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  z-index: 3;
-  overflow: hidden;
-}
-
-Left Curtain
-.curtain .left {
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    #6d0b0b 0%,
-    #9b111e 10%,
-    #6d0b0b 20%,
-    #9b111e 30%,
-    #6d0b0b 40%,
-    #9b111e 50%,
-    #6d0b0b 60%,
-    #9b111e 70%,
-    #6d0b0b 80%,
-    #9b111e 90%,
-    #6d0b0b 100%
-  );
-
-  background-size: cover;
-  position: absolute;
-  left: 0;
-  transition: transform 2s ease-in-out;
-}
-
-Right Curtain
-.curtain .right {
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    #6d0b0b 0%,
-    #9b111e 10%,
-    #6d0b0b 20%,
-    #9b111e 30%,
-    #6d0b0b 40%,
-    #9b111e 50%,
-    #6d0b0b 60%,
-    #9b111e 70%,
-    #6d0b0b 80%,
-    #9b111e 90%,
-    #6d0b0b 100%
-  );
-  background-size: cover;
-  position: absolute;
-  right: 0;
-  transition: transform 2s ease-in-out;
-}
-
-Curtain Opening Animation
-.open .left {
-  transform: translateX(-100%);
-}
-
-.open .right {
-  transform: translateX(100%);
-} */
-
-/* Card Container */
-.card-container {
-    position: relative;
-    width: 400px;
-    height: 500px;
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Slight hover effect */
-}
-
-/* Cards */
-.card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-
-/* Spread Effect on Hover */
-.card-container:hover .card-1 {
-    transform: translateX(-75px) rotate(-15deg);
-}
-.card-container:hover .card-2 {
-    transform: translateX(-25px) rotate(-5deg);
-}
-.card-container:hover .card-3 {
-    transform: translateX(25px) rotate(5deg);
-}
-
-.card-container:hover .card-4 {
-    transform: translateX(75px) rotate(15deg);
-}
-
-.card-1:hover {
-    z-index: 5;
-}
-.card-1:hover .card-2, .card-1:hover .card-3, .card-1:hover .card-4 {
-  z-index: 4;
-}
-
-.card-2:hover {
-    z-index: 5;
-}
-.card-2:hover .card-1, .card-2:hover .card-3, .card-2:hover .card-4 {
-  z-index: 4;
-}
-
-.card-3:hover {
-    z-index: 5;
-}
-.card-3:hover .card-1, .card-3:hover .card-2, .card-3:hover .card-4 {
-  z-index: 4;
-}
-
-  </style>
-<script>
-  window.addEventListener("load", function () {
-    document.querySelector(".curtain").classList.add("open");
-    setTimeout(() => {
-      document.querySelector(".curtain").style.display = "none";
-    }, 2000); // Hide after animation ends
-  });
-
-</script>
-
-
 </head>
 
 <body class="index-page">
@@ -187,24 +45,6 @@ Curtain Opening Animation
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#portfolio">Portfolio</a></li>
-          <!-- <li><a href="index.html#team">Team</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -246,8 +86,7 @@ Curtain Opening Animation
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-          <!-- <h2>Features</h2>
-          <p>Your one-stop solution for photography, printing, and branding excellence.</p> -->
+          
       </div><!-- End Section Title -->
   
       <div class="container">
@@ -360,53 +199,12 @@ Curtain Opening Animation
   
     </section><!-- /Features Section -->
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-
-    <!--   <div class="container">
-
-        <div class="row gy-3">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about-img.svg" alt="" class="img-fluid">
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3">
-              <h3>Luxury Gift Sets – Exclusive. Elegant. Personalized.</h3>
-              <p class="fst-italic">
-                  At <strong>Barq Studio</strong>, we specialize in crafting <strong>luxury gift sets</strong> that leave a lasting impression. Whether for 
-                  <strong>corporate events, special occasions, or premium giveaways</strong>, our curated selection of high-end, customizable gifts is 
-                  designed to <strong>elevate your brand</strong>.
-              </p>
-              <ul>
-                  <li><i class="bi bi-check2-all"></i> <span><strong>Engraved Power Banks & Smart Gadgets</strong> – A perfect blend of technology and style.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span><strong>Custom Branded Bottles & Mugs</strong> – Practical gifts with a personal touch.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span><strong>Elegant Notebooks & Pens</strong> – For a sophisticated writing experience.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span><strong>Personalized Packaging & Gift Wrapping</strong> – Luxury in every detail.</span></li>
-              </ul>
-              <p>
-                  <strong>Make Every Gift Special</strong> – Add your <strong>logo, name, or a heartfelt message</strong> to make it uniquely yours.
-              </p>
-              <p>
-                  📞 <strong>Contact us today</strong> to create your bespoke gift set that reflects quality and sophistication!
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
--->
-    </section><!-- /About Section -->
-
     <!-- Services Section -->
     <section id="services" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -463,11 +261,11 @@ Curtain Opening Animation
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-photo">Photography</li>
               <li data-filter=".filter-business">Business Cards</li>
+              <li data-filter=".filter-logo">Logo Design</li>
               <li data-filter=".filter-branding">Branding & Promotions</li>
               <li data-filter=".filter-gifts">Gifts</li>
               <li data-filter=".filter-packing">Packaging ideas</li>
-              <li data-filter=".filter-wearables">Wearables</li>
-              <li data-filter=".filter-holdings">Holdings</li>
+              <li data-filter=".filter-printings">Custom printings</li>
             </ul>
             <button class="scroll-btn right-btn">&#10095;</button> <!-- Right Arrow -->
           </div>          
@@ -562,25 +360,13 @@ Curtain Opening Animation
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             <!-- Photography -->
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/passport.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Passport size</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/passport.png" title="Passport" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-photo.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> --><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/indoor.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/1indoor.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Indoor shoots</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/indoor.png" title="Indoor" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/1indoor.png" title="Indoor" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-indoor.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -588,11 +374,11 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/outdoor.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/2outdoor.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Outdoor</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/outdoor.png" title="Outdoor" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/2outdoor.png" title="Outdoor" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-outdoor.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -600,11 +386,11 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/events.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/3events.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Events</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/events.png" title="Events" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/3events.png" title="Events" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-events.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -612,11 +398,11 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/industry.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/4industry.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>industrial</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/industry.png" title="Industrial Shoots" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/4industry.png" title="Industrial Shoots" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-industry.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -624,11 +410,11 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/6product.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Product</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/product.jpg" title="Product" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/6product.jpg" title="Product" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-products.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -636,48 +422,35 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/desert.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/5desert.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Desert Safari</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/desert.png" title="Desert Safari Shoots" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/5desert.png" title="Desert Safari Shoots" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-desert.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!-- Business Cards -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-business">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/uvmatt.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Spot UV Matt</h4>
-                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/uvmatt.png" title="Spot UV Matt Lamination" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-business.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-business">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/goldfoil.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/8goldfoil.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Gold foil UV velvet</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/goldfoil.png" title="Gold Foil Spot UV Velvet Lamination" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-business.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/8goldfoil.png" title="Gold Foil Spot UV Velvet Lamination" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-gold.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-business">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/normal.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/9normal.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Normal Cards</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/normal.png" title="Normal Business Cards data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/9normal.png" title="Normal Business Cards data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-business.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -685,12 +458,24 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-business">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/rounded.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/10rounded.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Rounded Cards</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/rounded.png" title="rounded" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-business.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/10rounded.png" title="Rounded Cards" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-rounded.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-business">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/7billbook.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Bill Books and Vouchers</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a href="assets/img/portfolio/7billbook.jpg" title="Bill Books and Vouchers" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-bill.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -699,47 +484,35 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/flyer.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/11flyer.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Flyers & Brochures</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/flyer.png" title="Flyer and Brochures" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/11flyer.png" title="Flyer and Brochures" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-branding.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/menu.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Menu Cards</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/menu.png" title="Menus" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-branding.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> --><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/letter.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/12letter.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Letter Heads</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/letter.jpg" title="Letter Heads" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-branding.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/12letter.jpg" title="Letter Heads" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-letter.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/envelope.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/13envelope.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Envelope</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/envelope.png" title="Envelope" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/13envelope.png" title="Envelope" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-branding.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -747,140 +520,100 @@ Curtain Opening Animation
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/stamps.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/14stamps.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Custom Ink Stamps</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/stamps.png" title="Ink Stamps" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/14stamps.png" title="Ink Stamps" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-branding.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <!-- packaging ideas -->
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-packing">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/box.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/15box.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>fried chicken box</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/box.png" title="Fried Chicken Boxes" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/15box.png" title="Fried Chicken Boxes" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-pack.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <!-- Gifts -->
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gifts">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/sets.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/16sets.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Luxury gift sets</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/sets.png" title="LuxurySets" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/16sets.png" title="LuxurySets" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details-gifts.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gifts">
+            <!-- Logo Design -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logo">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/watches.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/18logo.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Watches</h4>
+                  <h4>Logo</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/watches.png" title="Watches" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-gifts.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/18logo.jpg" title="Logo Design" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-logo.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gifts">
+            <!-- Custom printings -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-printings">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/day.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/19tshirt.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>National Day</h4>
+                  <h4>T-Shirt printing</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/day.png" title="National Day" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-gifts.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/19tshirt.jpg" title="T-Shirt" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-printings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!-- Holdings -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-holdings">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-printings">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/power.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/20mugs.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Power Banks</h4>
+                  <h4>Mugs</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/power.png" title="Power Banks" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-holdings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/20mugs.jpg" title="Mugs" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-printings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-holdings">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-printings">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/bottles.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/21pillows.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Pillows</h4>
+                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  <a href="assets/img/portfolio/21pillows.jpg" title="Pillows" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-printings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-printings">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/17bottles.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Bottles</h4>
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/bottles.png" title="Bottles" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-holdings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-holdings">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/mug.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Mugs</h4> -->
-                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <!-- <a href="assets/img/portfolio/mug.png" title="Mugs" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> --><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-holdings">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/pen.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Pens</h4>
-                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/pen.png" title="Pen" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-holdings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-holdings">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/note.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Notebooks</h4>
-                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/note.png" title="Notebooks" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-holdings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Wearables -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wearables">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/uniform.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Uniforms</h4>
-                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="assets/img/portfolio/uniform.png" title="Uniforms" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details-wearables.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/17bottles.jpg" title="Bottles" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-printings.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -1103,24 +836,6 @@ Curtain Opening Animation
 
   <footer id="footer" class="footer position-relative">
 
-    <!-- Newsletter Section -->
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -1171,10 +886,6 @@ Curtain Opening Animation
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Barq Studio</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://example.com/">HD Tech Solutions</a>
       </div>
     </div>
@@ -1189,7 +900,7 @@ Curtain Opening Animation
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
