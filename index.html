@@ -756,60 +756,58 @@
           </div>
 
           <div class="col-lg-7">
-          <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <label for="name-field" class="pb-2">Your Name</label>
-                <input type="text" name="name" id="name-field" class="form-control" required>
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+            
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+            
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+            
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+            
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+            
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none;">Loading...</div>
+                  <div class="error-message" style="color: red; display: none;"></div>
+                  <div class="sent-message" style="color: green; display: none;">Your message has been sent. Thank you!</div>
+            
+                  <button type="submit">Send Message</button>
+                </div>
+            
               </div>
-
-              <div class="col-md-6">
-                <label for="email-field" class="pb-2">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email-field" required>
-              </div>
-
-              <div class="col-md-12">
-                <label for="subject-field" class="pb-2">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject-field" required>
-              </div>
-
-              <div class="col-md-12">
-                <label for="message-field" class="pb-2">Message</label>
-                <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading" style="display: none;">Loading...</div>
-                <div class="error-message" style="color: red; display: none;"></div>
-                <div class="sent-message" style="color: green; display: none;">Your message has been sent. Thank you!</div>
-
-                <button type="submit">Send Message</button>
-              </div>
-
-            </div>
-          </form>
-
-          <script>
+            </form>
+            
+            <script>
             document.getElementById("contact-form").addEventListener("submit", async function(event) {
               event.preventDefault();
-
+            
               let formData = new FormData(this);
               let jsonData = Object.fromEntries(formData.entries());
-
+            
               document.querySelector(".loading").style.display = "block";
               document.querySelector(".error-message").style.display = "none";
               document.querySelector(".sent-message").style.display = "none";
-
+            
               try {
-                console.log("Hiii");
-                
-                let response = await fetch("https://script.google.com/macros/s/AKfycbzGomkoImppPtFhPWwN_B5c-Si-48I8S1EHHoZ3_wi6yoq1FuVgW2OBkxa6QJ3cPDyi/exec", { // Replace with your Google Apps Script URL
+                let response = await fetch("https://contact-form-handler.barqprintingsolutions.workers.dev/", { // Replace with your Cloudflare Worker or Google Script URL
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify(jsonData),
                 });
-
+            
                 if (response.ok) {
                   document.querySelector(".loading").style.display = "none";
                   document.querySelector(".sent-message").style.display = "block";
@@ -820,12 +818,12 @@
               } catch (error) {
                 document.querySelector(".loading").style.display = "none";
                 document.querySelector(".error-message").textContent = "Failed to send message. Please try again.";
-                document.querySelector(".error-message").style.display = "block";
+                // document.querySelector(".error-message").style.display = "block";
               }
             });
-          </script>
-
-        </div><!-- End Contact Form -->
+            </script>
+            
+          </div><!-- End Contact Form -->
 
         </div>
 
@@ -902,7 +900,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
