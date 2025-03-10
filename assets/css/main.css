@@ -1043,12 +1043,13 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   inset: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
+
   padding: 15px;
 }
 
@@ -1076,9 +1077,9 @@ section,
 .portfolio .portfolio-content .portfolio-info .preview-link,
 .portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
-  left: calc(50% - 40px);
+  left: calc(80% - 40px);
   font-size: 26px;
-  top: calc(50% - 14px);
+  top: calc(10% - 14px);
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
@@ -1090,7 +1091,7 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
+  left: 80%;
   font-size: 34px;
   line-height: 0;
 }
