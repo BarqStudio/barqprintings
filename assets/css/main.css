@@ -1080,7 +1080,8 @@ section,
   left: calc(80% - 40px);
   font-size: 26px;
   top: calc(10% - 14px);
-  color: #fff;
+  /* color: #fff; */
+  color: rgb(0, 0, 0, 1);
   transition: 0.3s;
   line-height: 1.2;
 }
